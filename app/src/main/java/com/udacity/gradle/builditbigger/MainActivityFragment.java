@@ -1,5 +1,6 @@
 package com.udacity.gradle.builditbigger;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -7,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.util.Pair;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -46,11 +48,13 @@ public class MainActivityFragment extends Fragment {
     View.OnClickListener myhandlerJoke = new View.OnClickListener() {
         public void onClick(View v) {
 
-            Joker joke = new Joker();
+            //Joker joke = new Joker();
 
-            Intent myIntent = new Intent(getActivity(), ActivityModule.class);
-            myIntent.putExtra("Joke", joke.getJoke());
-            startActivity(myIntent);
+            //Intent myIntent = new Intent(getActivity(), ActivityModule.class);
+            //myIntent.putExtra("Joke", joke.getJoke());
+            //startActivity(myIntent);
+
+            new EndpointsAsyncTask().execute(new Pair<Context, String>(getActivity(), "Manfred"));
 
         }
     };
