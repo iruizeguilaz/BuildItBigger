@@ -20,7 +20,7 @@ import signin.udacity.com.mylibrary.ActivityModule;
  * Created by Ivan on 08/12/2015.
  */
 
-public class EndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
+public class OLDEndpointsAsyncTask extends AsyncTask<Pair<Context, String>, Void, String> {
     private static MyApi myApiService = null;
     private Context context;
 

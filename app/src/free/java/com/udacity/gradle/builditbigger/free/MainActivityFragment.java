@@ -1,20 +1,17 @@
-package com.udacity.gradle.builditbigger;
+package com.udacity.gradle.builditbigger.free;
 
-import android.content.Context;
-import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.util.Pair;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.udacity.gradle.builditbigger.EndPointTaskWarpper;
 
-import signin.udacity.com.mylibrary.ActivityModule;
-
+import com.udacity.gradle.builditbigger.R;
 /**
  * A placeholder fragment containing a simple view.
  */
